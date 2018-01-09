@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "Term", "Work", "Music", "Misc", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "Term", "Work", "Music", "Misc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -57,7 +57,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "urxvt", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -88,11 +88,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+	//TAGKEYS(                        XK_5,                      4)
+	//TAGKEYS(                        XK_6,                      5)
+	//TAGKEYS(                        XK_7,                      6)
+	//TAGKEYS(                        XK_8,                      7)
+	//TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
